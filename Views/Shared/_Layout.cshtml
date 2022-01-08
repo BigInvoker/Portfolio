@@ -1,48 +1,76 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="author" content="Tooplate" />
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Additional CSS Files -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+    <link rel="stylesheet" href="~/assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="~/assets/css/tooplate-style.css" />
+    <link rel="stylesheet" href="~/assets/css/owl.css" />
+    <link rel="stylesheet" href="~/assets/css/lightbox.css" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    <div id="page-wraper">
+        <!-- Sidebar Menu -->
+        <div class="responsive-nav">
+            <i class="fa fa-bars" id="menu-toggle"></i>
+            <div id="menu" class="menu">
+                <i class="fa fa-times" id="menu-close"></i>
+                <div class="container">
+                    <div class="image">
+                        <img src="~/assets/images/logo-image.jfif" alt="Blugoon by Tooplate" />
+                    </div>
+                    <div class="author-content">
+                        <h4>ME!</h4>
+                        <span>my personal project to learn asp.net core mvc</span>
+                    </div>
+                    <nav class="main-nav" role="navigation">
+                        <ul class="main-menu">
+                            <li><a href="#section1">About me</a></li>
+                            <li><a href="#section2">Portfolios</a></li>
+                            <li><a href="#section3">Gallery</a></li>
+                            <li><a href="#section4">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="social-network">
+                        <ul class="soial-icons">
+                            <li>
+                                <a href="https://github.com/BigInvoker/Portfolio"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright-text">
+                        <p>this website uses customized version of blugoon template which is originally built by
+                            Tooplate. u can check it
+                            <a href="https://www.tooplate.com/view/2116-blugoon" class="btn-primary">here</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2022 - Portfolio - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer>
+        <br/>
+        @RenderBody()
+    </div>
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="~/assets/js/isotope.min.js"></script>
+    <script src="~/assets/js/owl-carousel.js"></script>
+    <script src="~/assets/js/lightbox.js"></script>
+    <script src="~/assets/js/custom.js"></script>
 </body>
+
 </html>
