@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Portfolio</title>
+    <title>@ViewData["Title"]</title>
     <meta name="description" content="" />
     <meta name="author" content="Tooplate" />
     <!-- Bootstrap core CSS -->
@@ -34,10 +34,10 @@
                     </div>
                     <nav class="main-nav" role="navigation">
                         <ul class="main-menu">
-                            <li><a href="#section1">About me</a></li>
-                            <li><a href="#section2">Portfolios</a></li>
-                            <li><a href="#section3">Gallery</a></li>
-                            <li><a href="#section4">Contact</a></li>
+                            <li><a asp-controller="Home" asp-action="Index">About Rust :)</a></li>
+                            <li><a href="#section2">Rust Gallery! x)</a></li>
+                            <li><a href="#section3">My Portfolios</a></li>
+                            <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="social-network">
