@@ -39,3 +39,4 @@ V:\User\Desktop\Portfolio\obj\Debug\net5.0\Portfolio.pdb
 V:\User\Desktop\Portfolio\obj\Debug\net5.0\Portfolio.genruntimeconfig.cache
 V:\User\Desktop\Portfolio\obj\Debug\net5.0\Portfolio.csproj.CopyComplete
 V:\User\Desktop\Portfolio\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+V:\User\Desktop\Portfolio\obj\Debug\net5.0\Razor\Views\Home\Info.cshtml.g.cs

@@ -11,53 +11,41 @@
 
             <h2>Rust is a difficult yet powerful language!</h2>
             <div class="line-dec"></div>
-            <span><blockquote cite="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust is a multi-paradigm, general-purpose programming language designed for performance and safety, 
-                especially safe concurrency. Rust is syntactically similar to C++, 
-                but can guarantee memory safety by using a borrow checker to validate references.</blockquote></span>
+            <span>
+                <blockquote cite="https://en.wikipedia.org/wiki/Rust_(programming_language)">Rust is a multi-paradigm,
+                    general-purpose programming language designed for performance and safety,
+                    especially safe concurrency. Rust is syntactically similar to C++,
+                    but can guarantee memory safety by using a borrow checker to validate references.</blockquote>
+            </span>
         </div>
-        <div class="right-image-post">
-            <div class="row">
-
-                <div class="col-md-8">
-                    <div class="left-text">
-                        <h4>Performance</h4>
-                        <p>Rust is blazingly fast and memory-efficient: with no runtime or garbage collector,
-                             it can power performance-critical services, run on embedded devices, 
-                             and easily integrate with other languages. </p>
-                        <div class="white-button">
-                            <a href="https://www.rust-lang.org/">Read More</a>
-                        </div>
-                    </div>
+        @* <partial name="Info" /> *@
+        @await Html.PartialAsync("Info")
+    </div>
+    <br /><hr /><br /><br />
+    <div class="container">
+    <div class="left-image-post">
+        <h1>Articles</h1><br/>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-image">
+                    <img src="~/assets/images/rustinfo2.jpg" alt="another rust-lang image" />
                 </div>
-                <div class="col-md-4">
-                    <div class="right-image">
-                        <img src="~/assets/images/rustinfo1.jpg" alt="rust-lang image" />
-                    </div>
-                </div>
-
             </div>
-        </div>
-        <div class="left-image-post">
-            <div class="row">
 
-                <div class="col-md-4">
-                    <div class="left-image">
-                        <img src="~/assets/images/rustinfo2.jpg" alt="another rust-lang image" />
+            <div class="col-md-8">
+                <div class="right-text">
+                    <h4>Reliability</h4>
+                    <h5>Admin1</h5>
+                    <p>Rust’s rich type system and ownership model guarantee memory-safety and thread-safety —
+                        enabling you to eliminate many classes of bugs at compile-time. </p>
+                    <div class="white-button">
+                        <a href="https://www.rust-lang.org/">Read More</a>
                     </div>
                 </div>
-
-                <div class="col-md-8">
-                    <div class="right-text">
-                        <h4>Reliability</h4>
-                        <p>Rust’s rich type system and ownership model guarantee memory-safety and thread-safety — 
-                            enabling you to eliminate many classes of bugs at compile-time. </p>
-                        <div class="white-button">
-                            <a href="https://www.rust-lang.org/">Read More</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+
         </div>
     </div>
+</div>
 </section>
+
